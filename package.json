@@ -1,0 +1,26 @@
+{
+  "name": "node-27-3rd-party-api-axios-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusCodeAcademy/type8-NODE-27-3rd-party-api-axios-fetch.git"
+  },
+  "keywords": [],
+  "author": "Marius K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariusCodeAcademy/type8-NODE-27-3rd-party-api-axios-fetch/issues"
+  },
+  "homepage": "https://github.com/MariusCodeAcademy/type8-NODE-27-3rd-party-api-axios-fetch#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
