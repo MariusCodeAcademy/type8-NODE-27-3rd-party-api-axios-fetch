@@ -2,9 +2,20 @@ const express = require('express');
 
 const norisRouter = express.Router();
 
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+
 // Routes
 norisRouter.get('/joke', async (req, res) => {
-  res.json('geting a joke');
+  // fetch data from https://api.chucknorris.io/jokes/random
+  // return a joke to user
+  const response = await fetch('https://api.chucknorris.io/jokes/random');
+  const data = await response.json();
+  const letsReturn = {
+    joke: data.value,
+    iconUrl: data.icon_url,
+  };
+  res.json(letsReturn);
 });
 
 module.exports = norisRouter;

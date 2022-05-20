@@ -1,1 +1,5 @@
 GET http://localhost:3000/api/joke
+
+###
+
+GET https://api.chucknorris.io/jokes/random
