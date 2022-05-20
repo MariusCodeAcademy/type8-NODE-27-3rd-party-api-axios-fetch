@@ -9,13 +9,14 @@ const fetch = (...args) =>
 norisRouter.get('/joke', async (req, res) => {
   // fetch data from https://api.chucknorris.io/jokes/random
   // return a joke to user
-  const response = await fetch('https://api.chucknorris.io/jokes/random');
-  const data = await response.json();
-  const letsReturn = {
-    joke: data.value,
-    iconUrl: data.icon_url,
-  };
-  res.json(letsReturn);
+  res.status(400).json({ success: false, error: 'OMG' });
+  // const response = await fetch('https://api.chucknorris.io/jokes/random');
+  // const data = await response.json();
+  // const letsReturn = {
+  //   joke: data.value,
+  //   iconUrl: data.icon_url,
+  // };
+  // res.json(letsReturn);
 });
 
 norisRouter.get('/joke-axios', async (req, res) => {
