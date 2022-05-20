@@ -2,4 +2,20 @@ GET http://localhost:3000/api/joke
 
 ###
 
-GET https://api.chucknorris.io/jokes/random
+POST https://reqres.in/api/users
+Content-Type: application/json
+
+{
+    "name": "James Bond",
+    "job": "007"
+}
+
+### 
+
+POST http://localhost:3000/api/create-user
+Content-Type: application/json
+
+{
+    "name": "Bill",
+    "ocupation": "Gardener"
+}

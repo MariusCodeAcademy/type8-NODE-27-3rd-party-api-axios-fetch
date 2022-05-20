@@ -18,4 +18,6 @@ norisRouter.get('/joke', async (req, res) => {
   res.json(letsReturn);
 });
 
+// GET /joke-categories - returns a list of categories from https://api.chucknorris.io/jokes/categories
+
 module.exports = norisRouter;
